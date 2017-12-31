@@ -1,0 +1,12 @@
+.footer{
+    background-color: $color-grey-dark-3;
+
+    &__logo-box{
+        text-align: center;
+        padding: 10rem 0;
+    }
+    &__logo{
+        width: 15rem;
+        height: auto;
+    }
+}

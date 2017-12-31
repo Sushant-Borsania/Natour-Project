@@ -1,0 +1,14 @@
+{
+  "name": "mywebsiteproject",
+  "version": "1.0.0",
+  "description": "This is the project built with Jonas",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Sushant",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.7.2"
+  }
+}
