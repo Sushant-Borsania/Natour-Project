@@ -13,6 +13,25 @@
         <title>Natours | Exciting tours for adventurous people</title>
     </head>
     <body>
+        <div class="navigation">
+            <input type="checkbox" class="navigation__checkbox" id="navi-toggle">
+
+            <label for="navi-toggle" class="navigation__button"><span class="navigation__icon">&nbsp;</span></label>
+
+            <div class="navigation__background">&nbsp;</div>
+
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a href="#" class="navigation__link">About Natours</a>
+                        <a href="#" class="navigation__link">Your Benefits</a>
+                        <a href="#" class="navigation__link">Popular Tours</a>
+                        <a href="#" class="navigation__link">Stories</a>
+                        <a href="#" class="navigation__link">Book Now</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
         <header class="header">
             <div class="header__logo-box">
                 <img src="img/logo-white.png" alt="Logo" class="header__logo">
@@ -159,7 +178,7 @@
 
 
 
-            <section class="section-tours">
+            <section class="section-tours" id="section-tours">
                 <div class="u-center-text u-margin-bottom-big">
                     <h2 class="heading-secondary">
                         Most Adventourus Tours
@@ -193,7 +212,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$297</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -225,7 +244,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$397</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -257,7 +276,7 @@
                                         <p class="card__price-only">Only</p>
                                         <p class="card__price-value">$497</p>
                                     </div>
-                                    <a href="#" class="btn btn--white">Book Now</a>
+                                    <a href="#popup" class="btn btn--white">Book Now</a>
                                 </div>
                             </div>
                         </div>
@@ -382,6 +401,22 @@
                     </div>
                 </div>
             </footer>
+            <div class="popup" id="popup">
+                <div class="popup__content">
+                    <div class="popup__left">
+                        <img src="img/nat-8.jpg" alt="Tour photo" class = "popup__img">
+                        <img src="img/nat-9.jpg" alt="Tour Photo" class = "popup__img">
+                    </div>
+                    <div class="popup__right">
+                        <a href="#section-tours" class="popup__close">&times;</a>
+                        <h2 class="heading-secondary">Start Booking Now</h2>
+                        <h3 class="heading-tertiary">Important &ndash; read carefully</h3>
+                        <p class="popup__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum recusandae adipisci commodi saepe, vitae dolorem placeat optio porro rerum, voluptate voluptatem eligendi vero ipsum iure cupiditate eaque hic mollitia quidem natus in provident, debitis ipsam nulla! Eos totam molestias quia perferendis, voluptates sequi saepe placeat, a dolores commodi accusamus illo temporibus libero. Labore deleniti, reiciendis consequuntur eos harum mollitia nemo omnis quasi vitae quidem magni explicabo, cum quod voluptates aliquam reprehenderit perferendis voluptatum dolores eum hic obcaecati excepturi temporibus vero. Facilis a, temporibus ratione iusto veritatis sit reprehenderit reiciendis quod fuga numquam suscipit aliquid ut nemo explicabo fugiat, est veniam eius quae distinctio accusamus vitae, omnis ducimus. Ducimu.</p>
+                        <a href="#" class="btn btn--green">Book Now</a>
+                    </div>
+
+                </div>
+            </div>
         </main>
     </body>
 </html>
