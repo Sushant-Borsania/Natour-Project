@@ -7,7 +7,21 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%; //here 1rem = 10px; 10/16 => 62.5%
+
+    // @include respond-phone{
+    //     font-size: 50%;
+    // }
+    
+    @include respond(tab-land){ //<1200
+        font-size: 56.25%; //here 1rem = 9px; 9/16 => 56.25%
+    }
+    @include respond(tab-port){ //<900
+        font-size: 50%; //here 1rem = 8px; 8/16 => 50%
+    }
+    @include respond(big-desktop){
+        font-size: 75%; //here 1rem = 12px; 12/16 => 75%
+    }
 }
 
 body{
@@ -17,4 +31,8 @@ body{
     color: $color-grey;
     padding: 3rem;
     box-sizing: border-box;
+
+    @include respond(tab-port){
+        padding:0;
+    }
 }
