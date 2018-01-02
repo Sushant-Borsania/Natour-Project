@@ -25,6 +25,11 @@
         text-align: center;
         overflow: hidden;
         backface-visibility: hidden;
+        @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)){
+            -webkit-clip-path: circle(45% at 50% 50%);
+            clip-path: circle(50% at 50% 50%);
+        }
+
         @include respond(tab-port){
             transform: skewX(0);
             float: none;
